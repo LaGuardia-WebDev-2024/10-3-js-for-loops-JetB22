@@ -4,10 +4,16 @@ setup = function() {
   background(255, 255, 247);
   stroke(173, 222, 237);
 
-  var i = 0;
-  while (i < 400) {
+  
+  for (var i = 0 ; i < 400 ; i += 20) {
       line(0, i, 400, i);
-      i+=20;
   }
+
+  for (var p = 15 ; p < 400 ; p+=20){
+      text("🐸🐸🐸🐸🐸🐸🐸🐸🐸🐸🐸🐸🐸🐸🐸🐸🐸🐸🐸🐸🐸🐸🐸🐸🐸",50,p)
+  }
+
+    stroke(255,0,0);
+    line (45,0,45,400);
 }
 
